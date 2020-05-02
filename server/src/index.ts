@@ -1,5 +1,5 @@
 import { isNil } from "ramda";
-import { logInfo, logError } from "./lib/utils/Logger";
+import { logInfo, logError } from "./lib/Logger";
 import app from "./App";
 
 const port = process.env.PORT || 3000;
