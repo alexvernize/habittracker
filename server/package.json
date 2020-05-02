@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon",
     "start": "ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
   },
   "license": "MIT",
   "dependencies": {
