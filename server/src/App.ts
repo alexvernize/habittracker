@@ -1,10 +1,11 @@
 import * as express from "express";
+import UserRoutes from "./domain/user/routes";
 
 class App {
-  public express;
+  public server;
 
   constructor() {
-    this.express = express();
+    this.server = express();
     this.mountRoutes();
   }
 
@@ -12,11 +13,12 @@ class App {
     const router = express.Router();
 
     router.get("/", (req, res) => {
-      res.json({ message: "Hello World!" });
+      res.json({ info: "HabitTracker Server" });
     });
 
-    this.express.use("/", router);
+    this.server.use("/", router);
+    this.server.use("/user", UserRoutes);
   }
 }
 
-export default new App().express;
+export default new App().server;

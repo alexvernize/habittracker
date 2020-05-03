@@ -9,3 +9,7 @@
 ### Run in development
 
 `yarn run dev`
+
+### Testing
+
+`yarn test`
