@@ -1,2 +1,5 @@
-node_modules
-dist
+# Server
+
+server/node_modules
+server/dist
+server/coverage
